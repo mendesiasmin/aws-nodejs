@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Imobiliaria</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+          <h1>Imobiliária</h1>
+      </div>
+      <% if(messages.success) { %>
+          <div class="alert alert-success" role="alert"><%= messages.success %></div>
+      <% } %>
+      <% if(messages.error) { %>
+          <div class="alert alert-danger" role="alert"><%= messages.error %></div>
+      <% } %>
+      <div class="header">
+        <a href='/import' class="btn btn-info" role="button">
+            Importar CSV
+        </a>
+        <a href='/export' class="btn btn-info" role="button">
+            Exportar CSV
+        </a>
+      </div>
+    </div> <!-- /container -->
+  </body>
+</html>
